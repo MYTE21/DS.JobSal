@@ -1,0 +1,4 @@
+outs:
+- md5: 9f19d93429472b05747c66d7ae51754d
+  size: 36960
+  path: ds_salaries.csv
