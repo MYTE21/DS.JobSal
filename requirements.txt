@@ -1,3 +1,8 @@
 dvc
 dvc[gdrive]
+jupyter
 sklearn
+pandas
+matplotlib
+seaborn
+missingno
