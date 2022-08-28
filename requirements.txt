@@ -10,3 +10,5 @@ country_converter
 plotly-express
 kaleido
 numpy
+wordcloud
+nltk
