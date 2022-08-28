@@ -9,3 +9,4 @@ missingno
 country_converter
 plotly-express
 kaleido
+numpy
