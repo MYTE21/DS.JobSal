@@ -1,3 +1,14 @@
 dvc
 dvc[gdrive]
+jupyter
 sklearn
+pandas
+matplotlib
+seaborn
+missingno
+country_converter
+plotly-express
+kaleido
+numpy
+wordcloud
+nltk
