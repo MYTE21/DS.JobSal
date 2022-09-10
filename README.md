@@ -1,6 +1,6 @@
 # DS.JobSal
 
-![Data Science Salary](./assets/ds-salary.jpg)
+![Data Science Salary](assets/ds-salary.jpg)
 
 - EDA
 - Outliers detection
