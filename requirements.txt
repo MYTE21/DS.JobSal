@@ -2,7 +2,7 @@ dvc
 dvc[gdrive]
 jupyter
 sklearn
-pandas
+pandas~=1.4.3
 matplotlib
 seaborn
 missingno
@@ -12,3 +12,4 @@ kaleido
 numpy
 wordcloud
 nltk
+pyyaml~=6.0
