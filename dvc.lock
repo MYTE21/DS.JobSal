@@ -1,0 +1,34 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/ds_salaries.csv
+      md5: 9f19d93429472b05747c66d7ae51754d
+      size: 36960
+    - path: src/get_data.py
+      md5: 4ad5bd67c7ae07156be34f5470fecd8e
+      size: 667
+    - path: src/load_data.py
+      md5: 6639c7f2110b714b21dab59966a08dfa
+      size: 609
+    outs:
+    - path: data/raw/ds_salaries.csv
+      md5: 50832a50f24f0a98274f2f9465759b2e
+      size: 35249
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/ds_salaries.csv
+      md5: 50832a50f24f0a98274f2f9465759b2e
+      size: 35249
+    - path: src/split_data.py
+      md5: 33eb991ab7685dc00bc10cb751673549
+      size: 1124
+    outs:
+    - path: data/processed/test_ds_salaries.csv
+      md5: 4ea494157592057748cf05925320c20c
+      size: 5839
+    - path: data/processed/train_ds_salaries.csv
+      md5: 44dd7bd21b01c48ee57ae41fad0877e6
+      size: 23062
