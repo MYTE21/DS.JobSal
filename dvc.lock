@@ -16,3 +16,19 @@ stages:
     - path: data/raw/ds_salaries.csv
       md5: 50832a50f24f0a98274f2f9465759b2e
       size: 35249
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/ds_salaries.csv
+      md5: 50832a50f24f0a98274f2f9465759b2e
+      size: 35249
+    - path: src/split_data.py
+      md5: 1bcb2ff3f0e316c29e02fff2a385a7d7
+      size: 1065
+    outs:
+    - path: data/processed/test_ds_salaries.csv
+      md5: e6491c0b77d2c05ebe2adb7914e61b2d
+      size: 7157
+    - path: data/processed/train_ds_salaries.csv
+      md5: c9231cad5f498c3a698d2d9b1261ba20
+      size: 28245
