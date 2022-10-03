@@ -1,7 +1,7 @@
 base:
   project: ds_job_sal
   random_state: 42
-  target_col: TARGET
+  target_col: salary_in_usd
 
 data_source:
   s3_source: data_given/ds_salaries.csv

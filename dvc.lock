@@ -23,12 +23,12 @@ stages:
       md5: 50832a50f24f0a98274f2f9465759b2e
       size: 35249
     - path: src/split_data.py
-      md5: 1bcb2ff3f0e316c29e02fff2a385a7d7
-      size: 1065
+      md5: 33eb991ab7685dc00bc10cb751673549
+      size: 1124
     outs:
     - path: data/processed/test_ds_salaries.csv
-      md5: e6491c0b77d2c05ebe2adb7914e61b2d
-      size: 7157
+      md5: 4ea494157592057748cf05925320c20c
+      size: 5839
     - path: data/processed/train_ds_salaries.csv
-      md5: c9231cad5f498c3a698d2d9b1261ba20
-      size: 28245
+      md5: 44dd7bd21b01c48ee57ae41fad0877e6
+      size: 23062

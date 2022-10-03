@@ -17,6 +17,8 @@ def split_and_save_data(config_path):
     random_state = config["base"]["random_state"]
 
     df = pd.read_csv(raw_data_path, sep=",")
+    df = df.drop(["salary", "salary_currency"], axis=1)
+
     train, test = train_test_split(df, test_size=split_ratio, random_state=random_state)
     train.to_csv(train_data_path, sep=",", encoding="utf-8", index=False)
     test.to_csv(test_data_path, sep=",", encoding="utf-8", index=False)

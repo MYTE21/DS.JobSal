@@ -1,7 +1,7 @@
 dvc
 dvc[gdrive]
 jupyter
-sklearn
+sklearn~=0.0
 pandas~=1.4.3
 matplotlib
 seaborn
@@ -9,7 +9,9 @@ missingno
 country_converter
 plotly-express
 kaleido
-numpy
+numpy~=1.23.2
 wordcloud
 nltk
 pyyaml~=6.0
+scikit-learn~=1.1.2
+joblib~=1.1.0
