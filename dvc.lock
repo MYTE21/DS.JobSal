@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/ds_salaries.csv
+      md5: 9f19d93429472b05747c66d7ae51754d
+      size: 36960
+    - path: src/get_data.py
+      md5: 4ad5bd67c7ae07156be34f5470fecd8e
+      size: 667
+    - path: src/load_data.py
+      md5: 6639c7f2110b714b21dab59966a08dfa
+      size: 609
+    outs:
+    - path: data/raw/ds_salaries.csv
+      md5: 50832a50f24f0a98274f2f9465759b2e
+      size: 35249
