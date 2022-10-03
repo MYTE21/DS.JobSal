@@ -35,7 +35,7 @@ def train_and_evaluate(config_path):
 
     target = [config["base"]["target_col"]]
 
-    # ! Problem modeling with categorical data - Preprocessing needed (get_dummies, MinMaxScaler, OneHotEncoder)
+    # ! Problem modeling with categorical data - Preprocessing needed (get_dummies, MinMaxScaler, OneHotEncoder).
     train = pd.read_csv(train_data_path, sep=",")
     test = pd.read_csv(test_data_path, sep=",")
 
